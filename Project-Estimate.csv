@@ -1,0 +1,13 @@
+﻿Group hierarchy,Region,Description,Service,Upfront,Monthly,First 12 months total,Currency,Configuration summary
+My Estimate,US East (N. Virginia),,Rekognition Image,0,1800,21600.00,USD,Number of images processed with labels API per month (2 million per month)
+My Estimate,US East (N. Virginia),,S3 Standard,0,12.3,147.60,USD,S3 Standard storage (100 GB per month)
+My Estimate,US East (N. Virginia),,Data Transfer,0,0,0.00,USD,
+My Estimate,US East (N. Virginia),,Amazon EC2,0,8.26,99.12,USD,"Operating system (Linux), Quantity (1), Pricing strategy (EC2 Instance Savings Plans 1 Year No Upfront), Storage amount (30 GB), Instance type (t2.micro)"
+My Estimate,US East (N. Virginia),,Standard topics,0,0.02,0.24,USD,"Requests ( per month), HTTP/HTTPS Notifications ( per month), EMAIL/EMAIL-JSON Notifications (1000 per month)"
+My Estimate,US East (N. Virginia),,AWS Lambda,0,0,0.00,USD,"Architecture (x86), Architecture (x86), Number of requests (1000 per month)"
+My Estimate,US East (N. Virginia),,AWS Amplify,0,10,120.00,USD,Number of build minutes (1000 per month)
+
+
+
+Acknowledgement
+"* AWS Pricing Calculator provides only an estimate of your AWS fees and doesn't include any taxes that might apply. Your actual fees depend on a variety of factors, including your actual usage of AWS services."

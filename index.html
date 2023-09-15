@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Here is the frontend stuff</title>
+	  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Expires" content="0" />
+    <link rel="stylesheet" href="amplify-frontend.css">
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+  <header >
+    <h1> Social Distancing Violation Detection </h1>
+	  <h2 >- current, updating rekognition frame is below: -</h2> 
+  </header>
+  <br />
+  <body>
+	<div id="imgDiv">
+	  <img id="img" src="https://video-input-bucket2.s3.amazonaws.com/output.jpeg" class="centerImage" />
+	  </div>  
+	  <br>
+	  <p id="hi"></p>
+	  <p id="hi2"></p>
+</body>
+	
+<script type="text/javascript">  
+
+	$(function() {
+		console.log("here");
+	   var intervalMS = 800; // 5 seconds
+	   setInterval(function() {
+		   console.log("inside");
+		  
+	      $("#img").remove();
+		   var image = document.createElement("IMG");
+		image.setAttribute('class', 'centerImage');
+		image.setAttribute('id', 'img');
+		image.src="https://video-input-bucket2.s3.amazonaws.com/output.jpeg"+ "?" + (new Date()).getTime();
+		 $("#imgDiv").html(image);  
+		   
+	   }, intervalMS);
+	});
+      </script>
+</html>
